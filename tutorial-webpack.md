@@ -14,4 +14,6 @@ Step 3 - In "package.json"...
     ...
     ```
 
-Obs.: it will read an entry file "index.js" to create another file called "main.js" in a dist folder
+Obs.: by default it will read an entry file "index.js" to create another file called "main.js" in a dist folder.
+
+Step 4 - Configuring webpack
