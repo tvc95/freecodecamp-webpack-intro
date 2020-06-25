@@ -16,4 +16,6 @@ Step 3 - In "package.json"...
 
 Obs.: by default it will read an entry file "index.js" to create another file called "main.js" in a dist folder.
 
-Step 4 - Configuring webpack
+Step 4 - Configuring webpack (webpack.config.js)
+
+Step 5 - Installing loaders
