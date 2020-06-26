@@ -22,3 +22,9 @@ Step 5 - Installing loaders
 
 Step 6 - Watch out for cache busting and install plugins!
 
+Step 7 - create 2 new webpack config files for dev and production builds respectively. The plugin webpack-merge will avoid code repetition. Install webpack-dev-server for development build
+
+Step 8 - Adding multiple entry points
+
+Step 9 - Extract CSS and Minify HTML/CSS/JS
+    npm install --save-dev mini-css-extract-plugin

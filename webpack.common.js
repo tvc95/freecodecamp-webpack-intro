@@ -1,5 +1,4 @@
 const path = require("path");   //native node module
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -8,14 +7,6 @@ module.exports = {
     },
     module: {
         rules: [
-            {
-                test: /\.scss$/,
-                use: [
-                    "style-loader",     //3. Inject styles into DOM
-                    "css-loader",       //2. turns css into commonjs
-                    "sass-loader"       //1. Turns sass into css
-                ]
-            },
             {
                 test: /\.html$/,
                 use: ["html-loader"]
@@ -31,10 +22,5 @@ module.exports = {
                 }
             }
         ]
-    },
-    plugins: [
-        new HtmlWebpackPlugin({
-            template: "./src/template.html"
-        })
-    ]
+    }
 };
