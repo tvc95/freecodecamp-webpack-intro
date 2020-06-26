@@ -1,4 +1,5 @@
 const path = require("path");   //native node module
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: "development",
@@ -6,10 +7,9 @@ module.exports = {
     entry: "./src/index.js",
     output: {
         //This is an object with attributes "filename" and "path"
-        filename: "mainapp.js",
+        filename: "mainapp.[contentHash].js",
         path: path.resolve(__dirname, "dist")
     },
-
     module: {
         rules: [
             {
@@ -21,5 +21,10 @@ module.exports = {
                 ]
             }
         ]
-    }
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: "./src/template.html"
+        })
+    ]
 };

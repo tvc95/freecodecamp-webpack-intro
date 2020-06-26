@@ -19,3 +19,6 @@ Obs.: by default it will read an entry file "index.js" to create another file ca
 Step 4 - Configuring webpack (webpack.config.js)
 
 Step 5 - Installing loaders
+
+Step 6 - Watch out for cache busting and install plugins!
+
