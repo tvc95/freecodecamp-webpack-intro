@@ -7,7 +7,7 @@ module.exports = merge(common, {
     devtool: "none", //gets rid of evals in development build
     output: {
         //This is an object with attributes "filename" and "path"
-        filename: "mainapp.js",
+        filename: "[name].bundle.js",
         path: path.resolve(__dirname, "dist")
     }
 });
